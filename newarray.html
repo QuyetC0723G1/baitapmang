@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>newarray</title>
+</head>
+<body>
+<script>
+    // Cho một mảng [1,7,5,9,2,6]
+    // - In ra các phần tử trong mảng
+
+    let numbers = [1, 7, 5, 9, 2, 6];
+    // for (let i = 0; i < numbers.length; i++) {
+    //     document.write(`Phan tu thu ${i} co gia tri la ${numbers[i]}</br>`)
+    // }
+
+
+    // - In ra các phần tử chẵn trong mảng
+    // for (let i = 0; i < numbers.length; i++) {
+    //     if (numbers[i] % 2 === 0) {
+    //         document.write(`phần tử thứ ${i} : số : ${numbers[i]} là số chẵn </br>`)
+    //     }
+    // }
+
+    // - In ra các phần tử tại vị trí chẵn trong mảng
+    // for (let i = 0; i < numbers.length; i++) {
+    //     if (i%2===0){
+    //         document.write(` Phần tử ${numbers[i]} là phần tử tại vị trí chẵn = ${i} </br>`)
+    //     }
+    //
+    // }
+
+    // - In ra tổng các phần tử chẵn trong mảng
+    // let total = 0;
+    // for (let i = 0; i < numbers.length; i++) {
+    //      if (numbers[i]%2===0) {
+    //          total += numbers[i];
+    //          console.log(i);
+    //      }
+    // } document.write(total);
+    // - In ra tổng các phần tử >10 trong mảng
+    // let total = 0;
+    // for (let i = 0; i < numbers.length; i++) {
+    //     if (numbers[i] > 5) {
+    //         total += numbers[i];
+    //     }
+    //
+    // }
+    // document.write(total);
+
+    // - In ra tổng các phần tử chia 7 dư 2 trong mảng
+
+    // let total=0;
+    // for (let i = 0; i < numbers[i]; i++) {
+    //     if (numbers[i]%7===2){
+    //         total+= numbers[i];
+    //     }
+    // }document.write(`tổng phần tử chia 7 dư 2 trong mảng là : ${total}`)
+
+
+    // - In ra max của mang
+    // let max = numbers[0];
+    // for (let i = 0; i < numbers.length; i++) {
+    //     if (numbers[i]>max){
+    //         max=numbers[i];
+    //         console.log(max)
+    //     }
+    // }document.write(`max la ${max} `)
+
+
+    // - In ra max của các phần tử chẵn mảng
+    // let max;
+    // for (let i = 0; i < number.length; i++) {
+    //     if (numbers[i]%2===0){
+    //         max=numbers[i];
+    //     }
+    //
+    // }
+    // for (let i = 0; i < numbers.length; i++) {
+    //     if (numbers[i]%2===0 && numbers[i]>max)
+    //     {
+    //         max= numbers[i];
+    //         console.log(numbers[i]);
+    //     }
+    //
+    // }alert(`max của phần tử chẵn là ${max}`);
+    // - In ra max của mảng
+    // - In ra số lượng các phần tử chia hết cho 5 trong mảng
+    // let count = 0;
+    // for (let i = 0; i < numbers.length; i++) {
+    //     if (numbers[i]%5===0){
+    //         count++
+    //     }
+    // }
+    // document.write(`số lượng các phần tử chia hết cho 5 là : ${count}`)
+    // - In ra trung bình các phần tử chia hết cho 5 trong mảng
+    let total = 0;
+    let trungbinh = 0;
+    let count=0
+    for (let i = 0; i < numbers.length; i++) {
+        if (numbers[i]%5===0){
+            total+= numbers[i];
+            count++
+        }trungbinh= total/count;
+
+    }document.write(`trung bình các phần tử chia hết cho 5 trong mảng là : ${trungbinh}`)
+
+</script>
+</body>
+</html>
